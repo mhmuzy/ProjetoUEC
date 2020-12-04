@@ -1,146 +1,146 @@
 package Hitss.Treinamento.Controller;
 
-import java.util.Scanner;
+import java.util.Scanner; /// *** Importando Assembly
 
-import javax.sound.midi.Soundbank;
+import javax.sound.midi.Soundbank; /// *** Importando Assembly
 
-import Hitss.Treinamento.Repository.LutadorRepository;
-import Hitss.Treinamento.Classes.Lutador;
-import Hitss.Treinamento.Enums.ECategoria;
-import Hitss.Treinamento.Enums.EStatus;
-import Hitss.Treinamento.Repository.LutadorRepositoryActuallyatributes;
+import Hitss.Treinamento.Repository.LutadorRepository; /// *** Importando
+import Hitss.Treinamento.Classes.Lutador; /// *** Importando
+import Hitss.Treinamento.Enums.ECategoria; /// *** Importando
+import Hitss.Treinamento.Enums.EStatus; /// *** Importando
+import Hitss.Treinamento.Repository.LutadorRepositoryActuallyatributes; /// *** Importando
 
 public class LutadorController {
-
-	public void Reproduzir() {
-		System.out.println("");
-		System.out.println("         Hitss Treinamento");
-		System.out.println("");
-		System.out.println("Selecione a opção desejada:");
-		System.out.println("(1) - Apresentar Lutador");
-		System.out.println("(2) - Verificar o Status do Lutador");
-		System.out.println("(3) - Verificar o Número de Vitórias do Lutador");
-		System.out.println("(4) - Verificar o Número de Perdas do Lutador");
-		System.out.println("(5) - Verificar o Número de Empates do Lutador");
-		System.out.println("(6) - Listar todos os Lutadores");
-		System.out.println("(7) - Listar todas as Vitórias de Todos os Lutadores");
-		System.out.println("(8) - Listar todas as Derrotas de Todos os Lutadores");
-		System.out.println("(9) - Listar todos os Empates de Todos os Lutadores");
-		System.out.println("");
-		try {
+	/// *** Declaração da Controller Lutador	
+	public void Reproduzir() { /// *** Reproduzir a Controller Lutador
+		System.out.println(""); /// *** Pula 1 Linha
+		System.out.println("         Hitss Treinamento"); /// *** Enunciado do Programa
+		System.out.println(""); /// *** Pula 1 Linha
+		System.out.println("Selecione a opção desejada:"); /// *** O Programa Pede para Selecionar a Opção Desejada
+		System.out.println("(1) - Apresentar Lutador"); /// *** Opção 1 - Apresentar o Lutador
+		System.out.println("(2) - Verificar o Status do Lutador"); /// *** Opção 2 - Verificar o Status do Lutador
+		System.out.println("(3) - Verificar o Número de Vitórias do Lutador"); /// *** Opção 3 - Verificar o Número de Vitórias do Lutador
+		System.out.println("(4) - Verificar o Número de Perdas do Lutador"); /// *** Opção 4 - Verificar o Núemro de Perdas do Lutador
+		System.out.println("(5) - Verificar o Número de Empates do Lutador"); /// *** Opção 5 - Verificar o Número de Empates do Lutador
+		System.out.println("(6) - Listar todos os Lutadores"); /// *** Opção 6 - Listar Todos os Lutadores
+		System.out.println("(7) - Listar todas as Vitórias de Todos os Lutadores"); /// *** Opção 7 - Listar todas as Vitórias dos Lutadores
+		System.out.println("(8) - Listar todas as Derrotas de Todos os Lutadores"); /// *** Opção 8 - Listar todas as Derrotas dos Lutadores
+		System.out.println("(9) - Listar todos os Empates de Todos os Lutadores"); /// *** Opção 9 - Listar todos os Empates dos Lutadores
+		System.out.println(""); /// *** Pula 1 Linha
+		try { /// *** Inicialização do Tratamento
 			
-			Scanner teclado = new Scanner(System.in);
+			Scanner teclado = new Scanner(System.in); /// *** Comando para digitar o Valor pelo Teclado
 			
-			int opcao = teclado.nextInt();
+			int opcao = teclado.nextInt(); /// *** Declaração da Variável que vai receber o comando para digitar o seu valor pelo teclado
 			
-			System.out.println("");
+			System.out.println(""); /// *** Pula 1 Linha
 			
-			LutadorRepository lutadorRepository = new LutadorRepository();
+			LutadorRepository lutadorRepository = new LutadorRepository(); /// *** Declaração do Repositório do Lutador
 			
-			Lutador lutador = new Lutador();
+			Lutador lutador = new Lutador(); /// *** Declaração do Objeto Lutador
 			
-			LutadorRepositoryActuallyatributes lutadorRepositoryActuallyatributes = new LutadorRepositoryActuallyatributes();
+			LutadorRepositoryActuallyatributes lutadorRepositoryActuallyatributes = new LutadorRepositoryActuallyatributes(); /// *** Declaração dos Repositórios Getters e Setters dos Atributos do Objeto Lutador
 			
-			switch (opcao) {
-			case 1:
-				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod = teclado.nextInt();
+			switch (opcao) { /// *** Inicialização do Case 
+			case 1: /// *** Caso seja Opção 1
+				System.out.println(""); /// *** Pula 1 Linha
+				System.out.println("Digite o Código do Lutador:"); /// *** O Programa pede para digitar o Código do Lutador
+				System.out.println(""); /// *** Pula 1 Linha
+				int cod = teclado.nextInt(); /// *** Declaração da Variável ponteiro para digitar o código do Lutador
 				
-				int[] Codigo = new int[6];
-				Codigo[1] = 1;
-				Codigo[2] = 2;
-				Codigo[3] = 3;
-				Codigo[4] = 4;
-				Codigo[5] = 5;
-				
-				
-				String[] Nome = new String[6];
-				Nome[1] = "João Rico";
-				Nome[2] = "Spider Nobre";
-				Nome[3] = "João Maçarico";
-				Nome[4] = "Rob Alicate";
-				Nome[5] = "Biu Rocha";
+				int[] Codigo = new int[6]; /// *** Declaração do Vetor do Código do Lutador
+				Codigo[1] = 1; /// *** Vetor 1 Recebe 1
+				Codigo[2] = 2; /// *** Vetor 2 Recebe 2
+				Codigo[3] = 3; /// *** Vetor 3 Recebe 3
+				Codigo[4] = 4; /// *** Vetor 4 Recebe 4
+				Codigo[5] = 5; /// *** Vetor 5 Recebe 5
 				
 				
-				String[] Nacionalidade = new String[6];
-				Nacionalidade[1] = "Português";
-				Nacionalidade[2] = "Mexicano";
-				Nacionalidade[3] = "Americano";
-				Nacionalidade[4] = "Brasileiro";
-				Nacionalidade[5] = "Brasileiro";
+				String[] Nome = new String[6]; /// *** Declaração do Vetor Nome do Lutador
+				Nome[1] = "João Rico"; /// *** Vetor 1 Recebe: João Rico
+				Nome[2] = "Spider Nobre"; /// *** Vetor 2 Recebe Spider Nobre
+				Nome[3] = "João Maçarico"; /// *** Vetor 3 Recebe João Maçarico
+				Nome[4] = "Rob Alicate"; /// *** Vetor 4 Recebe Rob Alicate
+				Nome[5] = "Biu Rocha"; /// *** Vetor 5 Recebe Biu Rocha
 				
 				
-				int[] Idade = new int[6];
-				Idade[1] = 42;
-				Idade[2] = 28;
-				Idade[3] = 38;
-				Idade[4] = 35;
-				Idade[5] = 31;
+				String[] Nacionalidade = new String[6]; /// *** Declaração do Vetor Nacionalidade
+				Nacionalidade[1] = "Português"; /// *** Vetor 1 Recebe Português
+				Nacionalidade[2] = "Mexicano"; /// *** Vetor 2 Recebe Mexicano
+				Nacionalidade[3] = "Americano"; /// *** Vetor 3 Recebe Americano
+				Nacionalidade[4] = "Brasileiro"; /// *** Vetor 4 Recebe Brasileiro
+				Nacionalidade[5] = "Brasileiro"; /// *** Vetor 5 Recebe Brasileiro
 				
 				
-				double[] Altura = new double[6];
-				Altura[1] = 1.93;
-				Altura[2] = 1.86;
-				Altura[3] = 1.82;
-				Altura[4] = 1.78;
-				Altura[5] = 1.81;
+				int[] Idade = new int[6]; /// *** Declaração do vetor Idade
+				Idade[1] = 42; /// *** Vetor 1 Recebe 42
+				Idade[2] = 28; /// *** Vetor 2 Recebe 28
+				Idade[3] = 38; /// *** Vetor 3 Recebe 38
+				Idade[4] = 35; /// *** Vetor 4 Recebe 35
+				Idade[5] = 31; /// *** Vetor 5 Recebe 31
 				
 				
-				double[] Peso = new double[6];
-				Peso[1] = 95.5;
-				Peso[2] = 108.3;
-				Peso[3] = 65.4;
-				Peso[4] = 73;
-				Peso[5] = 74;
+				double[] Altura = new double[6]; /// *** Declaração do Vetor Altura
+				Altura[1] = 1.93; /// *** Vetor 1 Recebe 1.93
+				Altura[2] = 1.86; /// *** Vetor 2 Recebe 1.86
+				Altura[3] = 1.82; /// *** Vetor 3 Recebe 1.82
+				Altura[4] = 1.78; /// *** Vetor 4 Recebe 1.78
+				Altura[5] = 1.81; /// *** Vetor 5 Recebe 1.81
 				
 				
-				ECategoria[] Categoria = new ECategoria[6];
-				Categoria[1] = ECategoria.Pesado;
-				Categoria[2] = ECategoria.Pesado;
-				Categoria[3] = ECategoria.Medio;
-				Categoria[4] = ECategoria.Pesado;
-				Categoria[5] = ECategoria.Pesado;
+				double[] Peso = new double[6]; /// *** Declaração do Vetor Peso
+				Peso[1] = 95.5; /// *** Vetor 1 Recebe 95.5
+				Peso[2] = 108.3; /// *** Vetor 2 Recebe 108.3
+				Peso[3] = 65.4; /// *** Vetor 3 Recebe 65.4
+				Peso[4] = 73; /// *** Vetor 4 Recebe 73
+				Peso[5] = 74; /// *** Vetor 5 Recebe 74
 				
 				
-				int[] Vitoria = new int[6];
-				Vitoria[1] = 108;
-				Vitoria[2] = 84;
-				Vitoria[3] = 203;
-				Vitoria[4] = 75;
-				Vitoria[5] = 56;
+				ECategoria[] Categoria = new ECategoria[6]; /// *** Declaração do Vetor Categoria
+				Categoria[1] = ECategoria.Pesado; /// *** Vetor 1 Recebe Pesado
+				Categoria[2] = ECategoria.Pesado; /// *** Vetor 2 Recebe Pesado
+				Categoria[3] = ECategoria.Medio; /// *** Vetor 3 Recebe Médio
+				Categoria[4] = ECategoria.Pesado; /// *** Vetor 4 Recebe Pesado
+				Categoria[5] = ECategoria.Pesado; /// *** Vetor 5 Recebe Pesado
 				
 				
-				int[] Derrota = new int[6];
-				Derrota[1] = 15;
-				Derrota[2] = 10;
-				Derrota[3] = 82;
-				Derrota[4] = 3;
-				Derrota[5] = 7;
+				int[] Vitoria = new int[6]; /// *** Declaração do Vetor Vitória do Lutador
+				Vitoria[1] = 108; /// *** Vetor 1 Recebe 108
+				Vitoria[2] = 84; /// *** Vetor 2 Recebe 84
+				Vitoria[3] = 203; /// *** Vetor 3 Recebe 203
+				Vitoria[4] = 75; /// *** Vetor 4 Recebe 75
+				Vitoria[5] = 56; /// *** Vetor 5 Recebe 56
 				
 				
-				int[] Empate = new int[6];
-				Empate[1] = 10;
-				Empate[2] = 18;
-				Empate[3] = 53;
-				Empate[4] = 0;
-				Empate[5] = 0;
+				int[] Derrota = new int[6]; /// *** Declaração do Vetor Derrota
+				Derrota[1] = 15; /// *** Vetor 1 Reecbe 15
+				Derrota[2] = 10; /// *** Vetor 2 Recebe 10
+				Derrota[3] = 82; /// *** Vetor 3 Recebe 82
+				Derrota[4] = 3; /// *** Vetor 4 Recebe 3
+				Derrota[5] = 7; /// *** Vetor 5 Recebe 7
 				
 				
-				EStatus[] status = new EStatus[6];
-				status[1] = EStatus.Aposentado;
-				status[2] = EStatus.Ativo;
-				status[3] = EStatus.Desclassificado;
-				status[4] = EStatus.Desclassificado;
-				status[5] = EStatus.Ativo;
+				int[] Empate = new int[6]; /// *** Declaração do Vetor Empate
+				Empate[1] = 10; /// *** Vetor 1 Recebe 10
+				Empate[2] = 18; /// *** Vetor 2 Recebe 18
+				Empate[3] = 53; /// *** Vetor 3 Recebe 53
+				Empate[4] = 0; /// *** Vetor 4 Recebe 0
+				Empate[5] = 0; /// *** Vetor 5 Recebe 0
 				
-				lutadorRepositoryActuallyatributes.setId(lutador, Codigo[cod]);
-				lutadorRepositoryActuallyatributes.setNome(lutador, Nome[cod]);
-				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade[cod]);
-				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade[cod]);
-				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura[cod]);
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso[cod]);
+				
+				EStatus[] status = new EStatus[6]; /// *** Declaração do Vetor status 
+				status[1] = EStatus.Aposentado; /// *** Vetor 1 Recebe Aposentado
+				status[2] = EStatus.Ativo; /// *** Vetor 2 Recebe Ativo
+				status[3] = EStatus.Desclassificado; /// *** Vetor 3 Recebe Desclassificado
+				status[4] = EStatus.Desclassificado; /// *** Vetor 4 Recebe Desclassificado
+				status[5] = EStatus.Ativo; /// *** Vetor 5 Recebe Ativo
+				
+				lutadorRepositoryActuallyatributes.setId(lutador, Codigo[cod]); /// *** Código do Lutador Recebe o Vetor Código
+				lutadorRepositoryActuallyatributes.setNome(lutador, Nome[cod]); /// *** Nome do Lutador Recebe o Vetor Nome
+				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade[cod]); /// *** Nacionalidade do Lutador Recebe o Vetor Nacionalidade
+				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade[cod]); /// *** Idade do Lutador Recebe o Vetor Idade
+				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura[cod]); /// *** Altura do Lutador Recebe o Vetor Altura
+				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso[cod]); 
 				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria[cod]);
 				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria[cod]);
 				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota[cod]);
@@ -622,9 +622,6 @@ public class LutadorController {
 				break;
 			case 6:
 				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod6 = teclado.nextInt();
 				
 				int[] Codigo6 = new int[6];
 				Codigo6[1] = 1;
@@ -713,35 +710,12 @@ public class LutadorController {
 				status6[4] = EStatus.Desclassificado;
 				status6[5] = EStatus.Ativo;
 				
-				lutadorRepositoryActuallyatributes.setId(lutador, Codigo6[cod6]);
-				lutadorRepositoryActuallyatributes.setNome(lutador, Nome6[cod6]);
-				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade6[cod6]);
-				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade6[cod6]);
-				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura6[cod6]);
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso6[cod6]);
-				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria6[cod6]);
-				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria6[cod6]);
-				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota6[cod6]);
-				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate6[cod6]);
-				lutadorRepositoryActuallyatributes.setStatus(lutador, status6[cod6]);
-		
-				if (cod6 == lutadorRepositoryActuallyatributes.GetId(lutador)) {
+						lutadorRepository.listarTodosLutadores();
 				
-				lutadorRepository.listarTodosLutadores();
-				} else {
-					System.out.println("");
-					System.out.println("        Resultado da Pesquisa");
-					System.out.println("--------------------------------------");
-					System.out.println("Nenhum Lutador encontrado.");
-					System.out.println("--------------------------------------");
-				}
 				break;
 			case 7:
 				
 				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod7 = teclado.nextInt();
 				
 				int[] Codigo7 = new int[6];
 				Codigo7[1] = 1;
@@ -830,34 +804,11 @@ public class LutadorController {
 				status7[4] = EStatus.Desclassificado;
 				status7[5] = EStatus.Ativo;
 				
-				lutadorRepositoryActuallyatributes.setId(lutador, Codigo7[cod7]);
-				lutadorRepositoryActuallyatributes.setNome(lutador, Nome7[cod7]);
-				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade7[cod7]);
-				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade7[cod7]);
-				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura7[cod7]);
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso7[cod7]);
-				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria7[cod7]);
-				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria7[cod7]);
-				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota7[cod7]);
-				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate7[cod7]);
-				lutadorRepositoryActuallyatributes.setStatus(lutador, status7[cod7]);
-		
-				if (cod7 == lutadorRepositoryActuallyatributes.GetId(lutador)) {
-					lutadorRepository.listarVitorias();
-				} else {
-					System.out.println("");
-					System.out.println("        Resultado da Pesquisa");
-					System.out.println("--------------------------------------");
-					System.out.println("Nenhum Lutador encontrado.");
-					System.out.println("--------------------------------------");
-				}
-
+							lutadorRepository.listarVitorias();
+				
 				break;
 			case 8:
 				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod8 = teclado.nextInt();
 				
 				int[] Codigo8 = new int[6];
 				Codigo8[1] = 1;
@@ -946,35 +897,13 @@ public class LutadorController {
 				status8[4] = EStatus.Desclassificado;
 				status8[5] = EStatus.Ativo;
 				
-				lutadorRepositoryActuallyatributes.setId(lutador, Codigo8[cod8]);
-				lutadorRepositoryActuallyatributes.setNome(lutador, Nome8[cod8]);
-				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade8[cod8]);
-				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade8[cod8]);
-				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura8[cod8]);
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso8[cod8]);
-				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria8[cod8]);
-				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria8[cod8]);
-				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota8[cod8]);
-				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate8[cod8]);
-				lutadorRepositoryActuallyatributes.setStatus(lutador, status8[cod8]);
-		
-				if (cod8 == lutadorRepositoryActuallyatributes.GetId(lutador)) {
-				
+						
 				lutadorRepository.listarDerrotas();
-				} else {
-					System.out.println("");
-					System.out.println("        Resultado da Pesquisa");
-					System.out.println("--------------------------------------");
-					System.out.println("Nenhum Lutador encontrado.");
-					System.out.println("--------------------------------------");
-				}
+				
 				break;
 			case 9:
 				
 				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod9 = teclado.nextInt();
 				
 				int[] Codigo9 = new int[6];
 				Codigo9[1] = 1;
@@ -1063,36 +992,28 @@ public class LutadorController {
 				status9[4] = EStatus.Desclassificado;
 				status9[5] = EStatus.Ativo;
 				
-				lutadorRepositoryActuallyatributes.setId(lutador, Codigo9[cod9]);
-				lutadorRepositoryActuallyatributes.setNome(lutador, Nome9[cod9]);
-				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade9[cod9]);
-				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade9[cod9]);
-				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura9[cod9]);
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso9[cod9]);
-				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria9[cod9]);
-				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria9[cod9]);
-				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota9[cod9]);
-				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate9[cod9]);
-				lutadorRepositoryActuallyatributes.setStatus(lutador, status9[cod9]);
-		
-				if (cod9 == lutadorRepositoryActuallyatributes.GetId(lutador)) {
-					lutadorRepository.listarEmpates();
-				} else {
-					System.out.println("");
-					System.out.println("        Resultado da Pesquisa");
-					System.out.println("--------------------------------------");
-					System.out.println("Nenhum Lutador encontrado.");
-					System.out.println("--------------------------------------");
-				}
+							lutadorRepository.listarEmpates();
+				
 
 				break;
 				
 			default:
+				System.out.println("");
+				System.out.println("        Resultado da Pesquisa");
+				System.out.println("--------------------------------------");
+				System.out.println("Por favor, digite a opção informada.");
+				System.out.println("--------------------------------------");
+			
+
 				break;
 			}
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println("");
+			System.out.println("        Resultado da Pesquisa");
+			System.out.println("--------------------------------------");
+			System.out.println("Erro de processamento: " + e.getMessage());
+			System.out.println("--------------------------------------");
 		}
 	}
 }
