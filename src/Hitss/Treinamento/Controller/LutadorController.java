@@ -140,75 +140,75 @@ public class LutadorController {
 				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade[cod]); /// *** Nacionalidade do Lutador Recebe o Vetor Nacionalidade
 				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade[cod]); /// *** Idade do Lutador Recebe o Vetor Idade
 				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura[cod]); /// *** Altura do Lutador Recebe o Vetor Altura
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso[cod]); 
-				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria[cod]);
-				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria[cod]);
-				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota[cod]);
-				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate[cod]);
-				lutadorRepositoryActuallyatributes.setStatus(lutador, status[cod]);
+				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso[cod]); /// *** Peso do Lutador Recebe o Vetor Peso do Lutador 
+				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria[cod]); /// *** Categoria do Lutador Recebe o Vetor Categoria do Lutador
+				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria[cod]); /// *** Vitória do Lutador Recebe o Vetor Vitória do Lutador
+				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota[cod]); /// *** Derrota do Lutador Recebe o Vetor Vitória do Lutador
+				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate[cod]); /// *** Empate do Lutador Recebe o Vetor Empate do Lutador
+				lutadorRepositoryActuallyatributes.setStatus(lutador, status[cod]); /// *** Status do Lutador Recebe o Vetor Status do Lutador
 		
-				if (cod == lutadorRepositoryActuallyatributes.GetId(lutador)) {
-					lutadorRepository.Apresentar(lutador, lutadorRepositoryActuallyatributes);
-				} else {
-					System.out.println("");
-					System.out.println("        Resultado da Pesquisa");
-					System.out.println("--------------------------------------");
-					System.out.println("Nenhum Lutador encontrado.");
-					System.out.println("--------------------------------------");
+				if (cod == lutadorRepositoryActuallyatributes.GetId(lutador)) { /// *** Se o Código do Dígito For Igual ao Id do Lutador
+					lutadorRepository.Apresentar(lutador, lutadorRepositoryActuallyatributes); /// *** Reproduzir o Método de Apresentar Lutador
+				} else { /// *** Se não for encontrada nenhuma busca do lutador
+					System.out.println(""); /// *** Pula 1 Linha
+					System.out.println("        Resultado da Pesquisa"); /// *** Enunciado do Resultado da Pesquisa
+					System.out.println("--------------------------------------"); /// *** Conceito de Perfumaria
+					System.out.println("Nenhum Lutador encontrado."); /// *** O Programa Informando que não foi encontrado nenhum lutador
+					System.out.println("--------------------------------------"); /// *** Conceito de Perfumaria
 				}
 				
 
-				break;
-			case 2:
-				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod2 = teclado.nextInt();
+				break; /// *** Para o Programa
+			case 2: /// *** Caso se a Opção for 2
+				System.out.println(""); /// *** Pula 1 Linha
+				System.out.println("Digite o Código do Lutador:"); /// *** O Programa Pede Para Digitar o Código do Lutador
+				System.out.println(""); /// *** Pula 1 Linha
+				int cod2 = teclado.nextInt(); /// *** O Comando Para Poder Digitar o Valor do Código
 				
-				int[] Codigo2 = new int[6];
-				Codigo2[1] = 1;
-				Codigo2[2] = 2;
-				Codigo2[3] = 3;
-				Codigo2[4] = 4;
-				Codigo2[5] = 5;
-				
-				
-				String[] Nome2 = new String[6];
-				Nome2[1] = "João Rico";
-				Nome2[2] = "Spider Nobre";
-				Nome2[3] = "João Maçarico";
-				Nome2[4] = "Rob Alicate";
-				Nome2[5] = "Biu Rocha";
+				int[] Codigo2 = new int[6]; /// *** Vetor Código do Lutador
+				Codigo2[1] = 1; /// *** Vetor 1 Recebe 1
+				Codigo2[2] = 2; /// *** Vetor 2 Recebe 2
+				Codigo2[3] = 3; /// *** Vetor 3 Recebe 3
+				Codigo2[4] = 4; /// *** Vetor 4 Recebe 4
+				Codigo2[5] = 5; /// *** Vetor 5 Recebe 5
 				
 				
-				String[] Nacionalidade2 = new String[6];
-				Nacionalidade2[1] = "Português";
-				Nacionalidade2[2] = "Mexicano";
-				Nacionalidade2[3] = "Americano";
-				Nacionalidade2[4] = "Brasileiro";
-				Nacionalidade2[5] = "Brasileiro";
+				String[] Nome2 = new String[6]; /// *** Vetor Nome do Lutador
+				Nome2[1] = "João Rico"; /// *** Vetor 1 Recebe João Rico
+				Nome2[2] = "Spider Nobre"; /// *** Vetor 2 Recebe Spider Nobre
+				Nome2[3] = "João Maçarico"; /// *** Vetor 3 Recebe João Maçarico
+				Nome2[4] = "Rob Alicate"; /// *** Vetor 4 Recebe Rob Alicate
+				Nome2[5] = "Biu Rocha"; /// *** Vetor 5 Recebe Biu Rocha
 				
 				
-				int[] Idade2 = new int[6];
-				Idade2[1] = 42;
-				Idade2[2] = 28;
-				Idade2[3] = 38;
-				Idade2[4] = 35;
-				Idade2[5] = 31;
+				String[] Nacionalidade2 = new String[6]; /// *** Vetor Nacionalidade do Lutador
+				Nacionalidade2[1] = "Português"; /// *** Vetor 1 Recebe Português
+				Nacionalidade2[2] = "Mexicano"; /// *** Vetor 2 Recebe Mexicano
+				Nacionalidade2[3] = "Americano"; /// *** Vetor 3 Recebe Americano
+				Nacionalidade2[4] = "Brasileiro"; /// *** Vetor 4 Recebe Brasileiro
+				Nacionalidade2[5] = "Brasileiro"; /// *** Vetor 5 Recebe Brasileiro
 				
 				
-				double[] Altura2 = new double[6];
-				Altura2[1] = 1.93;
-				Altura2[2] = 1.86;
-				Altura2[3] = 1.82;
-				Altura2[4] = 1.78;
-				Altura2[5] = 1.81;
+				int[] Idade2 = new int[6]; /// *** Vetor Idade do Lutador
+				Idade2[1] = 42; /// *** Vetor 1 Recebe 42
+				Idade2[2] = 28; /// *** Vetor 2 Recebe 28
+				Idade2[3] = 38; /// *** Vetor 3 Recebe 38
+				Idade2[4] = 35; /// *** Vetor 4 Recebe 35
+				Idade2[5] = 31; /// *** Vetor 5 Recebe 31
 				
 				
-				double[] Peso2 = new double[6];
-				Peso2[1] = 95.5;
-				Peso2[2] = 108.3;
-				Peso2[3] = 65.4;
+				double[] Altura2 = new double[6]; /// *** Vetor Altura do Lutador
+				Altura2[1] = 1.93; /// *** Vetor 1 Recebe 1.93
+				Altura2[2] = 1.86; /// *** Vetor 2 Recebe 1.86
+				Altura2[3] = 1.82; /// *** Vetor 3 Recebe 1.82
+				Altura2[4] = 1.78; /// *** Vetor 4 Recebe 1.78
+				Altura2[5] = 1.81; /// *** Vetor 5 Recebe 1.81
+				
+				
+				double[] Peso2 = new double[6]; /// *** Vetor Peso do Lutador
+				Peso2[1] = 95.5; /// *** Vetor 1 Recebe 95.5
+				Peso2[2] = 108.3; /// *** Vetor 2 Recebe 108.3
+				Peso2[3] = 65.4; /// *** Vetor 3 Recebe 65.4
 				Peso2[4] = 73;
 				Peso2[5] = 74;
 				
