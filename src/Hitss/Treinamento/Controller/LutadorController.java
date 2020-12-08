@@ -209,62 +209,62 @@ public class LutadorController {
 				Peso2[1] = 95.5; /// *** Vetor 1 Recebe 95.5
 				Peso2[2] = 108.3; /// *** Vetor 2 Recebe 108.3
 				Peso2[3] = 65.4; /// *** Vetor 3 Recebe 65.4
-				Peso2[4] = 73;
-				Peso2[5] = 74;
+				Peso2[4] = 73; /// *** Vetor 4 Recebe 73
+				Peso2[5] = 74; /// *** Vetor 5 Recebe 74
 				
 				
-				ECategoria[] Categoria2 = new ECategoria[6];
-				Categoria2[1] = ECategoria.Pesado;
-				Categoria2[2] = ECategoria.Pesado;
-				Categoria2[3] = ECategoria.Medio;
-				Categoria2[4] = ECategoria.Pesado;
-				Categoria2[5] = ECategoria.Pesado;
+				ECategoria[] Categoria2 = new ECategoria[6]; /// *** Vetor Categoria do Lutador
+				Categoria2[1] = ECategoria.Pesado; /// *** Vetor 1 Recebe Categoria Pesado
+				Categoria2[2] = ECategoria.Pesado; /// *** Vetor 2 Recebe Categoria Pesado
+				Categoria2[3] = ECategoria.Medio; /// *** Vetor 3 Recebe Categoria Médio
+				Categoria2[4] = ECategoria.Pesado; /// *** Vetor 4 Recebe Categoria Pesado
+				Categoria2[5] = ECategoria.Pesado; /// *** Vetor 5 Recebe Categoria Pesado
 				
 				
-				int[] Vitoria2 = new int[6];
-				Vitoria2[1] = 108;
-				Vitoria2[2] = 84;
-				Vitoria2[3] = 203;
-				Vitoria2[4] = 75;
-				Vitoria2[5] = 56;
+				int[] Vitoria2 = new int[6]; /// *** Vetor Nº de Vitórias do Lutador
+				Vitoria2[1] = 108; /// *** Vetor 1 Recebe 108 Vitórias
+				Vitoria2[2] = 84; /// *** Vetor 2 Recebe 84 Vitórias
+				Vitoria2[3] = 203; /// *** Vetor 3 Recebe 203 Vitórias
+				Vitoria2[4] = 75; /// *** Vetor 4 Recebe 75 Vitórias
+				Vitoria2[5] = 56; /// *** Vetor 5 Recebe 56 Vitórias
 				
 				
-				int[] Derrota2 = new int[6];
-				Derrota2[1] = 15;
-				Derrota2[2] = 10;
-				Derrota2[3] = 82;
-				Derrota2[4] = 3;
-				Derrota2[5] = 7;
+				int[] Derrota2 = new int[6]; /// *** Vetor Nº de Derrotas do Lutador
+				Derrota2[1] = 15; /// *** Vetor 1 Recebe 15 Derrotas
+				Derrota2[2] = 10; /// *** Vetor 2 Recebe 10 Derrotas
+				Derrota2[3] = 82; /// *** Vetor 3 Recebe 82 Derrotas
+				Derrota2[4] = 3; /// *** Vetor 4 Recebe 3 Derrotas
+				Derrota2[5] = 7; /// *** Vetor 5 Recebe 7 Derrotas
 				
 				
-				int[] Empate2 = new int[6];
-				Empate2[1] = 10;
-				Empate2[2] = 18;
-				Empate2[3] = 53;
-				Empate2[4] = 0;
-				Empate2[5] = 0;
+				int[] Empate2 = new int[6]; /// *** Vetor Nº de Empates do Lutador
+				Empate2[1] = 10; /// *** Vetor 1 Recebe 10 Empates
+				Empate2[2] = 18; /// *** Vetor 2 Recebe 18 Empates
+				Empate2[3] = 53; /// *** Vetor 3 Recebe 53 Empates
+				Empate2[4] = 0; /// *** Vetor 4 Recebe nenhum Empate
+				Empate2[5] = 0; /// *** Vetor 5 Recebe nenhum Empate
 				
 				
-				EStatus[] status2 = new EStatus[6];
-				status2[1] = EStatus.Aposentado;
-				status2[2] = EStatus.Ativo;
-				status2[3] = EStatus.Desclassificado;
-				status2[4] = EStatus.Desclassificado;
-				status2[5] = EStatus.Ativo;
+				EStatus[] status2 = new EStatus[6]; /// *** Vetor Status do Lutador
+				status2[1] = EStatus.Aposentado; /// *** Vetor 1 Recebe Status Aposentado
+				status2[2] = EStatus.Ativo; /// *** Vetor 2 Recebe Status Ativo
+				status2[3] = EStatus.Desclassificado; /// *** Vetor 3 Recebe Status Desclassificado Foi Imprudente na Ultima Luta
+				status2[4] = EStatus.Desclassificado; /// *** Vetor 4 Recebe Status Desclassificado Foi Imprudente na Ultima Luta
+				status2[5] = EStatus.Ativo; /// *** Vetor 5 Recebe Ativo
 				
-				lutadorRepositoryActuallyatributes.setId(lutador, Codigo2[cod2]);
-				lutadorRepositoryActuallyatributes.setNome(lutador, Nome2[cod2]);
-				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade2[cod2]);
-				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade2[cod2]);
-				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura2[cod2]);
-				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso2[cod2]);
-				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria2[cod2]);
-				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria2[cod2]);
-				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota2[cod2]);
-				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate2[cod2]);
-				lutadorRepositoryActuallyatributes.setStatus(lutador, status2[cod2]);
+				lutadorRepositoryActuallyatributes.setId(lutador, Codigo2[cod2]); /// *** Código do Lutador Recebe o Vetor Código do Lutador
+				lutadorRepositoryActuallyatributes.setNome(lutador, Nome2[cod2]); /// *** Nome do Lutador Recebe o Vetor Nome do Lutador
+				lutadorRepositoryActuallyatributes.setNacionalidade(lutador, Nacionalidade2[cod2]); /// *** Nacionalidade do Lutador Recebe o Vetor Nacionalidade do Lutador
+				lutadorRepositoryActuallyatributes.setIdade(lutador, Idade2[cod2]); /// *** Idade do Lutador Recebe o Vetor Idade do Lutador
+				lutadorRepositoryActuallyatributes.setAltura(lutador, Altura2[cod2]); /// *** Altura do Lutador Recebe o Vetor Altura do Lutador
+				lutadorRepositoryActuallyatributes.setPeso(lutador, Peso2[cod2]); /// *** Peso do Luador Recebe o Vetor Peso do Lutador
+				lutadorRepositoryActuallyatributes.setCategoria(lutador, Categoria2[cod2]); /// *** Categoria do Lutador Recebe o Vetor Categoria do Lutador
+				lutadorRepositoryActuallyatributes.setVitorias(lutador, Vitoria2[cod2]); /// *** Nº de Vitórias do Lutador Recebe o Vetor Nº de Vitórias do Lutador
+				lutadorRepositoryActuallyatributes.setDerrotas(lutador, Derrota2[cod2]); /// *** Nº de Derrotas do Lutador Recebe o Vetor Nº de Derrotas do Lutador
+				lutadorRepositoryActuallyatributes.setEmpates(lutador, Empate2[cod2]); /// *** Nº de Empates do Lutador Recebe o Vetor Nº de Empates do Lutador
+				lutadorRepositoryActuallyatributes.setStatus(lutador, status2[cod2]); /// *** Status do Lutador Recebe o Vetor Status do Lutador
 		
-				if (cod2 == lutadorRepositoryActuallyatributes.GetId(lutador)) {
+				if (cod2 == lutadorRepositoryActuallyatributes.GetId(lutador)) { /// *** Se o Código que é Digitado para pesquisar o Lutador for igual ao 
 					
 				lutadorRepository.Status(lutador, lutadorRepositoryActuallyatributes);
 				} else {
