@@ -266,38 +266,38 @@ public class LutadorController {
 		
 				if (cod2 == lutadorRepositoryActuallyatributes.GetId(lutador)) { /// *** Se o Código que é Digitado para pesquisar o Lutador for igual ao 
 					
-				lutadorRepository.Status(lutador, lutadorRepositoryActuallyatributes);
-				} else {
-					System.out.println("");
-					System.out.println("        Resultado da Pesquisa");
-					System.out.println("--------------------------------------");
-					System.out.println("Nenhum Lutador encontrado.");
-					System.out.println("--------------------------------------");
+				lutadorRepository.Status(lutador, lutadorRepositoryActuallyatributes); /// *** Mostrar Status do Lutador
+				} else { /// *** Caso Contrário
+					System.out.println(""); /// *** Pula 1 Linha
+					System.out.println("        Resultado da Pesquisa"); /// *** Mostrar Enunciado do Resultado da Pesquisa
+					System.out.println("--------------------------------------"); /// *** Conceito de Perfumaria
+					System.out.println("Nenhum Lutador encontrado."); /// *** O Programa Informa que não foi encontrado nenhum resultado
+					System.out.println("--------------------------------------"); /// *** Conceito de Perfumaria
 				}
-				break;
-			case 3:
-				System.out.println("");
-				System.out.println("Digite o Código do Lutador:");
-				System.out.println("");
-				int cod3 = teclado.nextInt();
+				break; /// *** Para 
+			case 3: /// *** Se a opção for 3
+				System.out.println(""); /// *** Pula 1 Linha
+				System.out.println("Digite o Código do Lutador:"); /// *** O Programa Pede Para digitar o Código do Lutador
+				System.out.println(""); /// *** Pula 1 Linha
+				int cod3 = teclado.nextInt(); /// *** Declaração da Variável Para Digitar no Teclado o Código do Lutador Para fazer a sua Busca
 				
-				int[] Codigo3 = new int[6];
-				Codigo3[1] = 1;
-				Codigo3[2] = 2;
-				Codigo3[3] = 3;
-				Codigo3[4] = 4;
-				Codigo3[5] = 5;
-				
-				
-				String[] Nome3 = new String[6];
-				Nome3[1] = "João Rico";
-				Nome3[2] = "Spider Nobre";
-				Nome3[3] = "João Maçarico";
-				Nome3[4] = "Rob Alicate";
-				Nome3[5] = "Biu Rocha";
+				int[] Codigo3 = new int[6]; /// *** Vetor Código do Lutador
+				Codigo3[1] = 1; /// *** Vetor 1 Recebe 1
+				Codigo3[2] = 2; /// *** Vetor 2 Recebe 2
+				Codigo3[3] = 3; /// *** Vetor 3 Recebe 3
+				Codigo3[4] = 4; /// *** Vetor 4 Recebe 4
+				Codigo3[5] = 5; /// *** Vetor 5 Recebe 5
 				
 				
-				String[] Nacionalidade3 = new String[6];
+				String[] Nome3 = new String[6]; /// *** Vetor Nome do Lutador
+				Nome3[1] = "João Rico"; /// *** Vetor 1 Recebe João Rico
+				Nome3[2] = "Spider Nobre"; /// *** Vetor 2 Recebe Spider Nobre
+				Nome3[3] = "João Maçarico"; /// *** Vetor 3 Recebe João Maçarico
+				Nome3[4] = "Rob Alicate"; /// *** Vetor 4 Recebe Rob Alicate
+				Nome3[5] = "Biu Rocha"; /// *** Vetor 5 Recebe Biu Rocha
+				
+				
+				String[] Nacionalidade3 = new String[6]; /// *** Vetor Nacionalidade do Lutador
 				Nacionalidade3[1] = "Português";
 				Nacionalidade3[2] = "Mexicano";
 				Nacionalidade3[3] = "Americano";
