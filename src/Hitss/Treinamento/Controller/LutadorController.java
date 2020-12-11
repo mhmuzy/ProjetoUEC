@@ -298,31 +298,31 @@ public class LutadorController {
 				
 				
 				String[] Nacionalidade3 = new String[6]; /// *** Vetor Nacionalidade do Lutador
-				Nacionalidade3[1] = "Português";
-				Nacionalidade3[2] = "Mexicano";
-				Nacionalidade3[3] = "Americano";
-				Nacionalidade3[4] = "Brasileiro";
-				Nacionalidade3[5] = "Brasileiro";
+				Nacionalidade3[1] = "Português"; /// *** Vetor 1 Recebe Português
+				Nacionalidade3[2] = "Mexicano"; /// *** Vetor 2 Recebe Mexicano
+				Nacionalidade3[3] = "Americano"; /// *** Vetor 3 Recebe Americano
+				Nacionalidade3[4] = "Brasileiro"; /// *** Vetor 4 Recebe Brasileiro
+				Nacionalidade3[5] = "Brasileiro"; /// *** Vetor 5 Recebe Brasileiro
 				
 				
-				int[] Idade3 = new int[6];
-				Idade3[1] = 42;
-				Idade3[2] = 28;
-				Idade3[3] = 38;
-				Idade3[4] = 35;
-				Idade3[5] = 31;
+				int[] Idade3 = new int[6]; /// *** Vetor Idade do Lutador
+				Idade3[1] = 42; /// *** Vetor 1 Recebe 42 anos
+				Idade3[2] = 28; /// *** Vetor 2 Recebe 28 anos
+				Idade3[3] = 38; /// *** Vetor 3 Recebe 38 anos
+				Idade3[4] = 35; /// *** Vetor 4 Recebe 35 anos
+				Idade3[5] = 31; /// *** Vetor 5 Recebe 31 anos
 				
 				
-				double[] Altura3 = new double[6];
-				Altura3[1] = 1.93;
-				Altura3[2] = 1.86;
-				Altura3[3] = 1.82;
-				Altura3[4] = 1.78;
-				Altura3[5] = 1.81;
+				double[] Altura3 = new double[6]; /// *** Vetor Altura do Lutador
+				Altura3[1] = 1.93; /// *** Vetor 1 Recebe 1.93
+				Altura3[2] = 1.86; /// *** Vetor 2 Recebe 1.86
+				Altura3[3] = 1.82; /// *** Vetor 3 Recebe 1.82
+				Altura3[4] = 1.78; /// *** Vetor 4 Recebe 1.78
+				Altura3[5] = 1.81; /// *** Vetor 5 Recebe 1.81
 				
 				
-				double[] Peso3 = new double[6];
-				Peso3[1] = 95.5;
+				double[] Peso3 = new double[6]; /// *** Vetor Peso do Lutador
+				Peso3[1] = 95.5; /// *** Vetor 1 Recebe 95.5
 				Peso3[2] = 108.3;
 				Peso3[3] = 65.4;
 				Peso3[4] = 73;
